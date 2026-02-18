@@ -1,0 +1,125 @@
+:root {
+  --bg: #0b0f14;
+  --card: #121925;
+  --text: #e6edf3;
+  --muted: #9fb0c0;
+  --border: rgba(255,255,255,0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  padding: 32px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 38px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.summary {
+  max-width: 75ch;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.links a:hover {
+  border-color: rgba(255,255,255,0.2);
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+}
+
+.card {
+  margin-top: 14px;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.diagram-card {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--card);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+}
+
+.diagram-card img {
+  width: 100%;
+  height: auto;
+}
+
+.skill-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.skill-group {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+.skill-group h4 {
+  margin: 0 0 6px;
+  color: var(--muted);
+}
+
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
